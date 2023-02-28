@@ -24,6 +24,7 @@ describe('template spec', () => {
     cy.wait(1000);
     cy.get('#cartur').click();
     cy.get('#login2').click();  
+    cy.get('body').type('{ctrl+w}')
     });
   })
 
