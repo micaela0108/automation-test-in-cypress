@@ -1,6 +1,8 @@
-describe('template spec', () => {
-  it('passes', () => {
-    cy.visit('https://www.demoblaze.com/') //visit the page
+describe('add a product the cart', () => {
+  beforeEach(() => {
+    cy.visit('https://www.demoblaze.com/') //visitar la pagina
+   })
+   it('add to cart', () => {
     cy.wait(1000); //wait 4 seconds
     cy.get('.container img:eq(1)').trigger('mouseover'); //posicionar el mouse sobre la primera imagen
     cy.get('.container img:eq(2)').trigger('mouseover'); //posicionar el mouse sobre la segunda imagen
