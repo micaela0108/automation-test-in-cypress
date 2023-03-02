@@ -1,7 +1,7 @@
 describe('add a product the cart', () => {
   beforeEach(() => {
     cy.visit('https://www.demoblaze.com/') //visitar la pagina
-   })
+  })
    it('add to cart', () => {
     cy.wait(1000); //wait 4 seconds
     cy.get('.container img:eq(1)').trigger('mouseover'); //posicionar el mouse sobre la primera imagen
